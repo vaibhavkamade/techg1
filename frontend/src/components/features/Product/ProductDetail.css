@@ -1,0 +1,278 @@
+/* ProductDetail.css */
+.product-detail-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.left {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.above {
+  width: 90%;
+  height: 75%;
+  overflow: hidden;
+  display: flex;
+  margin-left: 130px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-item-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.below {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+  gap: 3px;
+  margin-left: 50px;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+}
+
+.item-icon {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 70px;
+}
+
+.product-char {
+  width: 100%;
+  height: 100%;
+}
+
+.product-char-1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-char-1 h1 {
+  color: #3BBAF0;
+}
+
+.product-char-2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.product-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-button {
+  display: flex;
+  gap: 20px;
+}
+
+.product-button button {
+  width: 200px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  color: white;
+}
+
+.product-button button:nth-child(1) {
+  background-color: #F37826;
+}
+
+.product-button button:nth-child(2) {
+  background-color: #3BBAF0;
+}
+
+.product-section img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+
+.product-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  margin-left: 50px;
+}
+
+.product-section h2 {
+  color: #3BBAF0;
+}
+
+.product-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.right {
+  margin-left: 30px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+  margin-left: 140px;
+}
+
+.right > div:nth-child(2) {
+  display: flex;
+  gap: 30px;
+}
+
+.right > div:nth-child(3) {
+  display: flex;
+  gap: 30px;
+}
+
+.right hr + div:nth-of-type(4) {
+  display: flex;
+  gap: 30px;
+  font-weight: 800;
+  font-style: bold;
+  align-items: center;
+}
+
+.right hr + div:nth-of-type(4):hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .left {
+    width: 50%; /* Adjust width for medium screens */
+  }
+
+  .above {
+    margin-left: 50px; /* Adjust margin for medium screens */
+  }
+
+  .product-button button {
+    width: 160px; /* Adjust button width for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .left {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height to auto */
+  }
+
+  .above {
+    margin-left: 0; /* Remove left margin */
+    height: 50%; /* Adjust height for smaller screens */
+  }
+
+  .product-button button {
+    width: 140px; /* Adjust button width for smaller screens */
+  }
+
+  .product-left,
+  .product-right {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0; /* Remove left margin */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .right {
+    width: 100%; /* Full width for right section */
+    margin-left: 0; /* Remove left margin */
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .product-section {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .product-button {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-button button {
+    width: 120px; /* Adjust button width for very small screens */
+  }
+
+  .item-icon {
+    width: 50px; /* Adjust icon size for very small screens */
+  }
+
+  .product-char-2 {
+    gap: 20px; /* Adjust gap for very small screens */
+  }
+}

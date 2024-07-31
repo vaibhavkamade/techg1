@@ -1,0 +1,84 @@
+/* registeration section  */
+/* Container for the whole section */
+.section-registeration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container to hold the image and form side by side */
+.section-registeration .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  /* Styles for the image section */
+  .registeration-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registeration-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Styles for the form section */
+  .registration-form {
+    flex: 1;
+    background-color: #1c2331;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .registration-form form div {
+    margin-bottom: 20px;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .registration-form .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #02CBFF;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registration-form .btn-submit:hover {
+    background-color: #1c2331;
+    color: #02CBFF;
+    box-shadow: inset 0 0 0 0.1rem #02CBFF;
+  }

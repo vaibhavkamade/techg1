@@ -1,0 +1,44 @@
+/* General Styling for Shopping and Product Containers */
+.shopping-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product-container {
+        margin-left: 40px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .shopping-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .product-container {
+        margin-left: 0; /* Remove left margin */
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        gap: 10px; /* Further reduce gap between items */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-container {
+        flex-direction: column; /* Stack items vertically on very small screens */
+    }
+}

@@ -1,0 +1,47 @@
+.facet-group {
+  width: 170px; /* Ensure a consistent width for the facet groups */
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facet-group {
+    width: 150px; /* Reduce width on smaller screens */
+  }
+
+  .facet-group h3 {
+    font-size: 1.1em; /* Adjust font size for better fit */
+  }
+}
+
+@media (max-width: 576px) {
+  .facet-group {
+    width: 100%; /* Make full width on very small screens */
+  }
+
+  .facet-group h3 {
+    font-size: 1em; /* Further reduce font size */
+  }
+
+  .toggle-button {
+    font-size: 0.9em; /* Adjust font size for buttons */
+  }
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.chevron-icon {
+  transition: transform 0.3s;
+}
+
+.chevron-icon.expanded {
+  transform: rotate(90deg);
+}
