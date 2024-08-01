@@ -18,7 +18,7 @@ const BlogDetail = () => {
 
     const getSingleBlogData = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/data/blogs/${params.blogId}`, {
+            const response = await fetch(`https://techg1-4.onrender.com/api/data/blogs/${params.blogId}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
