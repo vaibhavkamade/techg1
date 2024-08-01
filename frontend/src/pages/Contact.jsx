@@ -27,7 +27,7 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://techg1-4.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
