@@ -4,7 +4,7 @@ import { useAuth } from "../components/auth/auth";
 import { toast } from "react-toastify";
 import './Register.css';
 
-const URL = "http://localhost:5000/api/auth/register"
+const URL = "https://techg1-4.onrender.com/api/auth/register"
 
 export const Register = () => {
 

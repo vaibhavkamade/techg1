@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../components/auth/auth";
 import { toast } from "react-toastify";
 
-const URL = "http://localhost:5000/api/auth/login"
+const URL = "https://techg1-4.onrender.com/api/auth/login"
 
 export const Login = () => {
     const [user, setUser] = useState({

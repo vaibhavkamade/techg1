@@ -29,7 +29,7 @@ export const AdminBlogCreate = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/admin/blogs", {
+      const response = await fetch("https://techg1-4.onrender.com/api/admin/blogs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

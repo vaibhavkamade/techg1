@@ -21,7 +21,7 @@ export const AdminBlogUpdate = () => {
 
     const getSingleBlogData = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/blogs/${params.blogId}`, {
+            const response = await fetch(`https://techg1-4.onrender.com/api/admin/blogs/${params.blogId}`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -54,7 +54,7 @@ export const AdminBlogUpdate = () => {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/admin/blogs/update/${params.blogId}`,
+                `https://techg1-4.onrender.com/api/admin/blogs/update/${params.blogId}`,
                 {
                     method: "PATCH",
                     headers: {

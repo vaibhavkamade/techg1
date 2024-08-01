@@ -9,7 +9,7 @@ export const AdminBlogs = () => {
   const { authorizationToken } = useAuth();
   const getAllBlogsData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/admin/blogs", {
+      const response = await fetch("https://techg1-4.onrender.com/api/admin/blogs", {
         method: 'GET',
         headers: {
           Authorization: authorizationToken,
@@ -25,7 +25,7 @@ export const AdminBlogs = () => {
 
   const deleteBlog = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/blogs/delete/${id}`, {
+      const response = await fetch(`https://techg1-4.onrender.com/api/admin/blogs/delete/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: authorizationToken,
