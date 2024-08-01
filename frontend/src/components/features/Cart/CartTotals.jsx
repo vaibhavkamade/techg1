@@ -1,83 +1,131 @@
 import React from 'react';
-import './CartTotals.css';
 import { Link } from 'react-router-dom';
 
-const CartTotals = ({ calculateSubtotal, calculateGST, calculateTotal ,cart , calculateShipping}) => {
+const CartTotals = ({ calculateSubtotal, calculateGST, calculateTotal, cart, calculateShipping }) => {
   const subtotal = calculateSubtotal();
   const gst = calculateGST();
   const total = calculateTotal();
-  const Shipping = calculateShipping();
+  const shipping = calculateShipping();
   console.log(cart);
 
+  const containerStyle = {
+    padding: '20px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+  };
+
+  const headingStyle = {
+    marginBottom: '20px',
+    fontSize: '24px',
+  };
+
+  const summaryStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
+  const rowStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '10px 0',
+    borderBottom: '1px solid #ddd',
+  };
+
+  const lastRowStyle = {
+    ...rowStyle,
+    borderBottom: 'none',
+  };
+
+  const labelStyle = {
+    fontWeight: 'bold',
+  };
+
+  const valueStyle = {
+    fontSize: '18px',
+  };
+
+  const totalRowStyle = {
+    ...rowStyle,
+    backgroundColor: '#292C34',
+    color: 'white',
+  };
+
+  const totalAmountStyle = {
+    ...valueStyle,
+    fontWeight: 'bold',
+  };
+
+  const checkoutButtonStyle = {
+    backgroundColor: '#007bff',
+    color: 'white',
+    padding: '10px 20px',
+    textAlign: 'center',
+    borderRadius: '4px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    display: 'inline-block',
+    marginTop: '20px',
+  };
+
+  const customFieldStyle = {
+    marginTop: '20px',
+  };
+
+  const imgStyle = {
+    borderRadius: '8px',
+    width: '100%',
+    height: '30px',
+  };
+
   return (
-    <div className="cart_totals">
-      <h2>Cart totals</h2>
-      <table className="shop_table shop_table_responsive">
-        <tbody>
-          <tr className="order-total">
-            <th>Subtotal</th>
-            <td data-title="Subtotal">
-              <span className="woocommerce-Price-amount amount">
-                <bdi>
-                  <span className="woocommerce-Price-currencySymbol">₹</span>{subtotal.toLocaleString()}
-                </bdi>
-              </span>
-            </td>
-          </tr>
+    <div style={containerStyle}>
+      <h2 style={headingStyle}>Cart Totals</h2>
+      <div style={summaryStyle}>
+        <div style={rowStyle}>
+          <span style={labelStyle}>Subtotal</span>
+          <span style={valueStyle}>
+            <span className="currency">₹</span>{subtotal.toLocaleString()}
+          </span>
+        </div>
 
-          <tr className="order-total">
-            <th>GST</th>
-            <td data-title="GST">
-              <span className="woocommerce-Price-amount amount">
-                <bdi>
-                  <span className="woocommerce-Price-currencySymbol">₹</span>{gst.toLocaleString()}
-                </bdi>
-              </span>
-            </td>
-          </tr>
+        <div style={rowStyle}>
+          <span style={labelStyle}>GST</span>
+          <span style={valueStyle}>
+            <span className="currency">₹</span>{gst.toLocaleString()}
+          </span>
+        </div>
 
-          <tr className="order-total">
-            <th>Shipping</th>
-            <td data-title="Shipping">
-              <span className="woocommerce-Price-amount amount">
-                <bdi>
-                  <span className="woocommerce-Price-currencySymbol">{Shipping}</span>
-                </bdi>
-              </span>
-            </td>
-          </tr>
+        <div style={rowStyle}>
+          <span style={labelStyle}>Shipping</span>
+          <span style={valueStyle}>
+            <span className="currency">₹</span>{shipping.toLocaleString()}
+          </span>
+        </div>
 
-          <tr className="order-total"  style={{backgroundColor:'#292C34',color:'white'}}>
-            <th>Total</th>
-            <td data-title="Total">
-              <strong>
-                <span className="woocommerce-Price-amount amount">
-                  <bdi>
-                    <span className="woocommerce-Price-currencySymbol">₹</span>{total.toLocaleString()}
-                  </bdi>
-                </span>
-              </strong>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div className="wc-proceed-to-checkout">
-        <Link to={`/shopping/cart/checkout`} className="checkout-button button alt wc-forward">
+        <div style={totalRowStyle}>
+          <span style={labelStyle}>Total</span>
+          <span style={totalAmountStyle}>
+            <span className="currency">₹</span>{total.toLocaleString()}
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <Link to={`/shopping/cart/checkout`} style={checkoutButtonStyle}>
           Proceed to checkout
         </Link>
       </div>
-      <div className="cart-custom-field">
+
+      <div style={customFieldStyle}>
         <div id="text-7" className="widget widget_text">
           <div className="textwidget">
             <p>
               <img
                 fetchpriority="high"
                 decoding="async"
-                className="alignnone size-large wp-image-1200"
+                style={imgStyle}
                 src="https://themedemo.commercegurus.com/shoptimizer-demodata/wp-content/uploads/sites/53/2018/07/trust-symbols_b-1024x108.jpg"
                 alt=""
-                width="100%"
-                height="100%"
               />
             </p>
           </div>
