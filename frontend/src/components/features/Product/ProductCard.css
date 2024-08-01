@@ -113,10 +113,11 @@ p {
     .card {
         width: 220px; /* Adjust width for smaller screens */
         height: 380px; /* Adjust height for smaller screens */
+        align-items: center;
     }
 
     .btn {
-        width: 140px; /* Adjust button width for smaller screens */
+        width: 200px; /* Adjust button width for smaller screens */
     }
 
     h3, h5, h6 {

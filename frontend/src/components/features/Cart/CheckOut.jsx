@@ -150,7 +150,7 @@ const CheckoutPage = () => {
           </Col>
 
           <Col md={4}>
-            <h2 className="checkout-title">Your order</h2>
+            <h2 className="checkout-title" style={{textAlign:'center',marginTop:'10px'}}>Your order</h2>
             <div style={{ maxHeight: '270px', overflowY: 'auto' }}>
               <ListGroup>
                 {cart.map(item => (
@@ -174,44 +174,71 @@ const CheckoutPage = () => {
               `}</style>
             </div>
 
-            <div style={{ position: 'sticky', top: '20px' , zIndex: 10}}>
-              <Card className="mt-3" style={{ height: '20vw', padding: '10px', margin: '0 auto', border: '1px solid #ddd', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-                <Card.Body style={{ padding: '10px',backgroundColor:'#F9F9F9' }}>
-                  <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
-                    <span style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <strong>Subtotal:</strong> ₹{subtotal}
-                    </span>
-                  </Card.Text>
-                  <hr style={{margin:'0px'}} />
-                  <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
-                    <span style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <strong>GST:</strong> ₹{gst}
-                    </span>
-                  </Card.Text>
-                  <hr style={{margin:'0px'}} />
-
-                  <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
-                    <span style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <strong>Shipping:</strong> {calculateShipping()}
-                    </span>
-                  </Card.Text>
-                  <hr style={{ border: 'none', borderTop: '1px solid #ddd', margin: '10px 0' }} />
-                  <Card.Text style={{ fontSize: '18px', fontWeight: '700',backgroundColor:'#292C34',color:'white',padding:'5px' }} >
-                    <span style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <strong>Total:</strong> ₹{total}
-                    </span>
-                  </Card.Text>
-                  <img
-                    fetchpriority="high"
-                    decoding="async"
-                    className="alignnone size-large wp-image-1200"
-                    src="https://themedemo.commercegurus.com/shoptimizer-demodata/wp-content/uploads/sites/53/2018/07/trust-symbols_b-1024x108.jpg"
-                    alt=""
-                    style={{ maxWidth: '100%', height: '40px', marginTop: '10px',objectFit:'contain' }} // Adjust image size and margin as needed
-                  />
-                </Card.Body>
-              </Card>
-            </div>
+            <div
+      style={{
+        position: 'sticky',
+        top: '20px',
+        zIndex: 10,
+        textAlign: 'center',
+        marginTop: '20px',
+      }}
+    >
+      <Card
+        className="mt-3"
+        style={{
+          height:'300px',
+          padding: '10px',
+          margin: '0 auto',
+          border: '1px solid #ddd',
+          borderRadius: '10px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+          backgroundColor: '#F9F9F9',
+          maxWidth: '400px', // Adjust the max-width for better responsiveness
+        }}
+      >
+        <Card.Body style={{ padding: '10px' }}>
+          <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
+            <span style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Subtotal:</strong> ₹{subtotal}
+            </span>
+          </Card.Text>
+          <hr style={{ margin: '0px' }} />
+          <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
+            <span style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>GST:</strong> ₹{gst}
+            </span>
+          </Card.Text>
+          <hr style={{ margin: '0px' }} />
+          <Card.Text style={{ fontSize: '16px', fontWeight: '500' }}>
+            <span style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Shipping:</strong> {calculateShipping()}
+            </span>
+          </Card.Text>
+          <hr style={{ border: 'none', borderTop: '1px solid #ddd', margin: '10px 0' }} />
+          <Card.Text
+            style={{
+              fontSize: '18px',
+              fontWeight: '700',
+              backgroundColor: '#292C34',
+              color: 'white',
+              padding: '5px',
+            }}
+          >
+            <span style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Total:</strong> ₹{total}
+            </span>
+          </Card.Text>
+          <img
+            fetchpriority="high"
+            decoding="async"
+            className="alignnone size-large wp-image-1200"
+            src="https://themedemo.commercegurus.com/shoptimizer-demodata/wp-content/uploads/sites/53/2018/07/trust-symbols_b-1024x108.jpg"
+            alt=""
+            style={{ maxWidth: '100%', height: 'auto', marginTop: '10px', objectFit: 'contain' }} // Adjust image size and margin as needed
+          />
+        </Card.Body>
+      </Card>
+    </div>
           </Col>
         </Row>
 

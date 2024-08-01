@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 30px;
-    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+    overflow-x: auto;
 }
 
 .product-container {
@@ -16,29 +16,36 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
     .product-container {
-        margin-left: 40px; /* Adjust margin for medium screens */
+        margin-left: 40px;
     }
 }
 
 @media (max-width: 992px) {
     .shopping-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
 
     .product-container {
-        margin-left: 0; /* Remove left margin */
-        gap: 20px; /* Reduce gap between items */
+        margin-left: 0;
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .product-container {
-        gap: 10px; /* Further reduce gap between items */
+        gap: 10px;
     }
 }
 
 @media (max-width: 576px) {
+    .shopping-container {
+        align-items: flex-start;
+    }
+    
     .product-container {
-        flex-direction: column; /* Stack items vertically on very small screens */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }

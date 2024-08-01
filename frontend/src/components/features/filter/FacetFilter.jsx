@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FacetGroup from './FacetGroup';
 // import './FacetFilter.css';
 
@@ -64,7 +64,7 @@ const FacetFilter = ({ filters, onFilterChange }) => {
     setIsMobile768(window.innerWidth <= 768);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

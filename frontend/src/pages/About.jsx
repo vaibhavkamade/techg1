@@ -90,13 +90,6 @@ const About = () => {
         </div>
       </div>
       <hr />
-      <div className="container-2">
-        <Slider
-          title={"Work with best software devloper agency"}
-          images={images}
-        />
-      </div>
-      <hr />
       <div className="container-3">
         <div className="left">
           <img

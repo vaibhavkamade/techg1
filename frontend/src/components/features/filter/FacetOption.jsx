@@ -56,45 +56,27 @@ const FacetOption = ({ option, isChecked, onChange }) => {
   }, []);
 
   return (
-    <li
-      className="facet-option"
-      style={facetOptionStyle}
-    >
-      <label
-        className="checkbox-label"
-        style={checkboxLabelStyle}
-      >
+    <li className="facet-option" style={facetOptionStyle}>
+      <label className="checkbox-label" style={checkboxLabelStyle}>
         <input
           type="checkbox"
-          checked={isChecked}
-          onChange={() => onChange(option)}
           className="hidden-checkbox"
           style={hiddenCheckboxStyle}
+          checked={isChecked}
+          onChange={() => onChange(option)}
         />
-        <div
-          className="styled-checkbox"
-          style={{
-            ...styledCheckboxStyle,
-            width: isMobile576 ? '16px' : isMobile768 ? '18px' : '20px',
-            height: isMobile576 ? '16px' : isMobile768 ? '18px' : '20px',
-          }}
-        >
+        <span className="styled-checkbox" style={styledCheckboxStyle}>
           {isChecked && (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -25 100 100" className="checkmark" style={{
-              ...checkmarkStyle,
-              width: isMobile576 ? '12px' : isMobile768 ? '14px' : '16px',
-              height: isMobile576 ? '12px' : isMobile768 ? '14px' : '16px',
-            }}>
-              <polygon fill="currentColor" points="0.4,23.9 36,59.6 99.6,-4 88.5,-4 77.4,-4 36,37.3 22.6,24 11.5,24 "></polygon>
+            <svg className="checkmark" viewBox="0 0 24 24" style={checkmarkStyle}>
+              <path fill="currentColor" d="M20.285 6.708l-11.57 11.57L3.716 13.28 2.3 14.695l6.415 6.415L21.7 8.122z" />
             </svg>
           )}
-        </div>
+        </span>
         <span
           className="checkbox-text"
           style={{
             ...checkboxTextStyle,
             fontSize: isMobile576 ? '0.8em' : isMobile768 ? '0.9em' : '1em',
-            width: isMobile576 ? 'calc(100% - 25px)' : 'calc(100% - 30px)',
           }}
         >
           {option}

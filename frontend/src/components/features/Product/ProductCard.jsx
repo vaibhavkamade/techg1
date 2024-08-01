@@ -25,7 +25,7 @@ const ProductCard = ({ id, name, imageSrc, description, amount, quantity, maxQua
         state={{ id, name, imageSrc, description, amount, quantity, maxQuantity, GST, freeDelivery, deliveryFee }}
         style={{ textDecoration: 'none' }}
       >
-        <button className='btn'>Learn More <span> →</span> </button>
+        <button className='btn'>Learn More  </button>
       </Link>
     </div>
 
