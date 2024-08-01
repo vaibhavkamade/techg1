@@ -28,7 +28,7 @@ const HomePage = () => {
           </div>
           <div className="blog-image">
             {/* <img src="/src/assets/images/blog.jpg" alt="Explore Our Blog" /> */}
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6dId-nBwwXBkAEAOSrnHdzlbf6QWV5GEGw&s" alt="" />
+            <img src="https://media.istockphoto.com/id/1304186549/vector/automatic-spring-ballpoint-pen-in-black-case-vector-illustration.jpg?s=612x612&w=0&k=20&c=R_yPawneqKX8J-NeiKmNXuYx36tCoPSCFEHx0Bd4dEg=" alt="" />
           </div>
         </div>
       </section>
@@ -36,7 +36,7 @@ const HomePage = () => {
         <div className="section-content">
           <div className="section-image">
             {/* <img src="src/assets/images/ecommerce_sales_blue.png" alt="Shop the Latest Trends" /> */}
-            <img src="https://imgs.search.brave.com/Pv3aS7kGLnWDl1ieEuV4hiVi8kp0rj7tSOz7M2M-zOA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzI4Lzg3LzYy/LzM2MF9GXzIyODg3/NjI0OV9wZnlMQzNL/bjk3NkhPeUhnemxR/NUwyb0g0Q2NZWU15/RC5qcGc" alt="" />
+            <img src="https://media.istockphoto.com/id/531492115/vector/set-of-colorful-empty-shopping-bags-isolated-vector-illustration.jpg?s=612x612&w=0&k=20&c=ae7RjBWM_Q7E4sA1uBd69ghoze4zq2Vx6Vut1rV4tfM=" alt="" />
           </div>
           <div className="section-text">
             <h2>🛒 Shop the Latest Trends</h2>
