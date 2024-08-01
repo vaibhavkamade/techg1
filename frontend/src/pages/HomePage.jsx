@@ -34,7 +34,8 @@ const HomePage = () => {
       <section className="homeshop-section">
         <div className="section-content">
           <div className="section-image">
-            <img src="src/assets/images/ecommerce_sales_blue.png" alt="Shop the Latest Trends" />
+            {/* <img src="src/assets/images/ecommerce_sales_blue.png" alt="Shop the Latest Trends" /> */}
+            <img src="https://imgs.search.brave.com/Pv3aS7kGLnWDl1ieEuV4hiVi8kp0rj7tSOz7M2M-zOA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzI4Lzg3LzYy/LzM2MF9GXzIyODg3/NjI0OV9wZnlMQzNL/bjk3NkhPeUhnemxR/NUwyb0g0Q2NZWU15/RC5qcGc" alt="" />
           </div>
           <div className="section-text">
             <h2>🛒 Shop the Latest Trends</h2>

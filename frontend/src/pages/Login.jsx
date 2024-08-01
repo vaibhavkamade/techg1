@@ -57,14 +57,14 @@ export const Login = () => {
                 <main>
                     <div className="section-registeration">
                         <div className="container grid grid-two-cols">
-                            <div className="registeration-image">
+                            {/* <div className="registeration-image">
                                 <img
                                     src="/src/assets/images/login.jpg"
                                     alt="a boy is trying to do registeration"
                                     width="700px"
                                     height="500px"
                                 />
-                            </div>
+                            </div> */}
                             <div className="registration-form">
                                 <h1 className="main-heading mb-3">Login form</h1>
                                 <br />

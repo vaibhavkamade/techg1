@@ -67,14 +67,14 @@ export const Register = () => {
                 <main>
                     <div className="section-registeration">
                         <div className="container grid grid-two-cols">
-                            <div className="registeration-image">
+                            {/* <div className="registeration-image">
                                 <img
                                     src="/src/assets/images/registration-removebg-preview.png"
                                     alt="a boy is trying to do registeration"
                                     width="700px"
                                     height="500px"
                                 />
-                            </div>
+                            </div> */}
                             <div className="registration-form">
                                 <h1 className="main-heading mb-3">registeration form</h1>
                                 <br />
