@@ -27,7 +27,8 @@ const HomePage = () => {
             <Link className="nav-link" to="/blogs">Read Our Blog</Link>
           </div>
           <div className="blog-image">
-            <img src="/src/assets/images/blog.jpg" alt="Explore Our Blog" />
+            {/* <img src="/src/assets/images/blog.jpg" alt="Explore Our Blog" /> */}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6dId-nBwwXBkAEAOSrnHdzlbf6QWV5GEGw&s" alt="" />
           </div>
         </div>
       </section>
@@ -60,7 +61,8 @@ const HomePage = () => {
             <Link className="nav-link" to="/contact">Contact Us</Link>
           </div>
           <div className="section-image">
-            <img src="/src/assets/images/vecteezy_concept_illustration_blue.png" alt="Get in Touch" />
+            {/* <img src="/src/assets/images/vecteezy_concept_illustration_blue.png" alt="Get in Touch" /> */}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzncS4kD8b0dbign4qjFCi2Bb61ONtux8fqQ&s" alt="" />
           </div>
         </div>
       </section>
